@@ -1,0 +1,8 @@
+numpy
+pydantic
+uvicorn
+lightgbm
+fastapi
+pandas
+tweepy
+email-validator
