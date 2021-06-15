@@ -38,7 +38,7 @@ cd app
 uvicorn main:app
 ```
 - Copy the host link, in my case its `http://127.0.0.1:8000`, you can also use `http://localhost:8000`. For more description you can refer to `http://localhost:8000/docs`.
-- Try GET using Python, do the following:
+- Try POST using Python, do the following:
 ```
 >>> import requests
 >>> url = "http://localhost:8000/predict"
