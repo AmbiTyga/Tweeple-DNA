@@ -14,10 +14,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-api = TweetAPI(consumer_key = 'WQXzjRaf3Ql66dcv4hls1ULkS',
-			consumer_secret = 'QQG7PPvchLRul5dhAMLi7KWp59U56Hh1399zpBSfGQ7ZTKR8m1'	,
-			access_token= '983655149049528321-LJacg24BNwe19VE51mKhFJ8IPwpiVia',		
-			access_token_secret = 'cx3hRsOdeRK8FuBnbLXT6suTREvyzdmfAM2PFWAsBw5vZ'
+api = TweetAPI(consumer_key = None,
+			consumer_secret = None	,
+			access_token= None,		
+			access_token_secret = None
 )
 
         

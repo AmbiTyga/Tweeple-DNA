@@ -20,6 +20,7 @@ git clone https://github.com/AmbiTyga/Tweeple-DNA.git
 ```
 cd Tweeple-DNA
 ```
+- Go to `main.py`, at line 18, replace the Twitter tokens. To get the tokens refer to [Developer Portal](https://developer.twitter.com/en/portal/dashboard)
 - Create Virtual Environment. I recommend using [pipenv](https://pypi.org/project/pipenv/)
 ```
 pipenv shell
@@ -35,4 +36,13 @@ cd app
 - Run the app into local system
 ```
 uvicorn main:app
+```
+- Copy the host link, in my case its `http://127.0.0.1:8000`, you can also use `http://localhost:8000`. For more description you can refer to `http://localhost:8000/docs`.
+- Try GET using Python, do the following:
+```
+>>> import requests
+>>> url = "http://localhost:8000/predict"
+>>> id = {'id':'ambi_tyga'}
+>>> requests.post(url,json=id).json()
+{'Bot Probabilty': 0.43629276266830935, 'Label': 'human'}
 ```
